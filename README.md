@@ -1,10 +1,23 @@
-# Cross-Temporal Landmark Matching Pipeline
+# POLARIS: Cross-Temporal Landmark Matching
 
 Vision-language pipeline for matching landmarks across seasonal datasets using FastVLM and OWL-ViT. Identifies invariant landmarks and temporal changes in outdoor environments captured under different conditions (winter vs autumn).
 
 Project metadata: [CONTRIBUTING.md](CONTRIBUTING.md) · [CITATION.cff](CITATION.cff) · [LICENSE](LICENSE)
 
-**Project Documentation:** [Google Docs](https://docs.google.com/document/d/1B7olGH20mLg_vbxM9kXPgtVxORdQn5aJza6HhdTuOmo/edit?usp=sharing)
+**Project Documentation:** [Google Docs](https://docs.google.com/document/d/1B7olGH20mLg_vbxM9kXPgtVxORdQn5aJza6HhdTuOmo/edit?usp=sharing) · **Project page:** [kausarpatherya.com](https://kausarpatherya.com/projects/polaris/index.html)
+
+## Project status and contribution
+
+**Status:** research prototype. The pipeline runs end to end and produces
+comparison artifacts, but there is no published paper and no stable hosted
+demo. The evaluation framework below is an *experiment plan*: its research
+questions state hypotheses and expected findings, not measured results.
+
+Kausar Patherya designed and implemented the staged matching pipeline: the
+histogram-based keyframe selection front end, the OWL-ViT open-vocabulary
+detection stage, FastVLM semantic enrichment, the depth-consistency check, and
+the keypoint/RANSAC geometric verification step, along with the baseline
+comparisons and experiment scaffolding used to study them.
 
 ## Overview
 
