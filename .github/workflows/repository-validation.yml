@@ -1,0 +1,32 @@
+name: Repository validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify syntax for primary scripts
+        run: |
+          python -m py_compile cross_temporal_pipeline.py
+          python -m py_compile analyze_detections.py
+          python -m py_compile scripts/cross_temporal_matching.py
+
+      - name: Ensure README has no machine-specific paths
+        run: |
+          if grep -E '/Users/|/Volumes/' README.md; then
+            echo 'README contains machine-specific paths.'
+            exit 1
+          fi

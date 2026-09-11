@@ -301,7 +301,7 @@ def main():
     parser.add_argument("--video2", type=str, required=True,
                        help="Path to second video (e.g., winter)")
     parser.add_argument("--model-path", type=str,
-                       default="/Users/kausar/Documents/ml-fastvlm/checkpoints/llava-fastvithd_1.5b_stage2",
+                       default="checkpoints/llava-fastvithd_1.5b_stage2",
                        help="Path to FastVLM model")
     parser.add_argument("--context1", type=str, default="Video 1",
                        help="Description of first video context (e.g., 'Summer 2023')")

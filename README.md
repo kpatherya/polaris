@@ -2,6 +2,8 @@
 
 Vision-language pipeline for matching landmarks across seasonal datasets using FastVLM and OWL-ViT. Identifies invariant landmarks and temporal changes in outdoor environments captured under different conditions (winter vs autumn).
 
+Project metadata: [CONTRIBUTING.md](CONTRIBUTING.md) · [CITATION.cff](CITATION.cff) · [LICENSE](LICENSE)
+
 **Project Documentation:** [Google Docs](https://docs.google.com/document/d/1B7olGH20mLg_vbxM9kXPgtVxORdQn5aJza6HhdTuOmo/edit?usp=sharing)
 
 ## Overview
@@ -57,10 +59,10 @@ conda activate fastvlm
 
 # Run pipeline with all optimizations (recommended for large datasets)
 python cross_temporal_pipeline.py \
-    --winter-rgb /Volumes/KAUSAR/rover_dataset/2024-01-13/realsense_D435i/rgb \
-    --winter-depth /Volumes/KAUSAR/rover_dataset/2024-01-13/realsense_D435i/depth \
-    --autumn-rgb /Volumes/KAUSAR/rover_dataset/2024-04-11/realsense_D435i/rgb \
-    --autumn-depth /Volumes/KAUSAR/rover_dataset/2024-04-11/realsense_D435i/depth \
+    --winter-rgb /path/to/winter/rgb \
+    --winter-depth /path/to/winter/depth \
+    --autumn-rgb /path/to/autumn/rgb \
+    --autumn-depth /path/to/autumn/depth \
     --model-path checkpoints/llava-fastvithd_0.5b_stage2 \
     --output-dir pipeline_results \
     --use-keyframing \

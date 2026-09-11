@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Cross-Temporal Landmark Matching Pipeline
+message: If you use this repository, please cite it using the metadata below.
+type: software
+authors:
+  - family-names: Patherya
+    given-names: Kausar
+repository-code: https://github.com/kpatherya/polaris
+url: https://github.com/kpatherya/polaris
+version: 0.1.0
+date-released: 2026-09-10
+license: Apache-2.0

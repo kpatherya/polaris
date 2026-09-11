@@ -10,7 +10,7 @@ This script runs OWL-ViT on a sample of images and reports:
 
 Usage:
     python analyze_detections.py \
-        --image-dir /Volumes/KAUSAR/rover_dataset/2024-01-13/realsense_D435i/rgb \
+    --image-dir /path/to/rgb/images \
         --num-samples 20 \
         --output-dir detection_analysis
 """
