@@ -13,11 +13,32 @@ comparison artifacts, but there is no published paper and no stable hosted
 demo. The evaluation framework below is an *experiment plan*: its research
 questions state hypotheses and expected findings, not measured results.
 
-Kausar Patherya designed and implemented the staged matching pipeline: the
-histogram-based keyframe selection front end, the OWL-ViT open-vocabulary
-detection stage, FastVLM semantic enrichment, the depth-consistency check, and
-the keypoint/RANSAC geometric verification step, along with the baseline
-comparisons and experiment scaffolding used to study them.
+Kausar Patherya designed and implemented the staged matching pipeline layered
+on top of FastVLM: the histogram-based keyframe selection front end, the
+OWL-ViT open-vocabulary detection stage, the FastVLM enrichment integration,
+the depth-consistency check, and the keypoint/RANSAC geometric verification
+step, along with the baseline comparisons and experiment scaffolding used to
+study them. The specific files are the top-level pipeline scripts,
+`scripts/`, and `experiments/`.
+
+## Upstream attribution
+
+**This repository is a derivative of [apple/ml-fastvlm](https://github.com/apple/ml-fastvlm).**
+The `app/`, `llava/`, and `model_export/` trees, and the Apache-2.0
+[`LICENSE`](LICENSE), come from that project; `llava/` is itself derived from
+LLaVA. Upstream copyright and license notices are retained in
+[`ACKNOWLEDGEMENTS`](ACKNOWLEDGEMENTS) and
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+**Model weights are not Apache-2.0.** FastVLM weights are covered separately by
+Apple's Machine Learning Research Model license in
+[`LICENSE_MODEL`](LICENSE_MODEL), which restricts use to scientific research of
+AI and machine-learning technology. Read it before using the weights for
+anything beyond research.
+
+The [`CITATION.cff`](CITATION.cff) entry covers only the cross-temporal
+matching work added here; cite FastVLM and LLaVA separately for the components
+this builds on.
 
 ## Overview
 

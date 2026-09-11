@@ -1,6 +1,9 @@
 cff-version: 1.2.0
-title: Cross-Temporal Landmark Matching Pipeline
-message: If you use this repository, please cite it using the metadata below.
+title: "POLARIS: Cross-Temporal Landmark Matching"
+message: >-
+  If you use this repository, please cite the entry below for the
+  cross-temporal matching work, and cite the upstream FastVLM and LLaVA
+  projects listed under references for the components it builds on.
 type: software
 authors:
   - family-names: Patherya
@@ -10,3 +13,17 @@ url: https://github.com/kpatherya/polaris
 version: 0.1.0
 date-released: 2026-09-10
 license: Apache-2.0
+references:
+  - type: software
+    title: "FastVLM: Efficient Vision Encoding for Vision Language Models"
+    repository-code: https://github.com/apple/ml-fastvlm
+    license: Apache-2.0
+    notes: >-
+      Upstream project. This repository is a derivative of it. Model weights
+      are covered separately by LICENSE_MODEL (Apple Machine Learning Research
+      Model license, research use only).
+  - type: software
+    title: "LLaVA: Large Language and Vision Assistant"
+    repository-code: https://github.com/haotian-liu/LLaVA
+    license: Apache-2.0
+    notes: The bundled llava/ tree derives from this project.
