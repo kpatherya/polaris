@@ -172,9 +172,13 @@ full_analysis/
 video_analysis_output/
 pipeline_results/
 visualizations/
-artifacts/
-archive/
+artifacts/runs/
 annotations/
+
+# Experiment artifacts
+experiments/*.csv
+experiments/detections.json
+experiments/results_presentation/
 
 # Numpy arrays and pickle files
 *.npy
@@ -188,3 +192,4 @@ annotations/
 # Temporary files
 *.tmp
 *.temp
+.ruff_cache/

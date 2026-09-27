@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# For licensing see accompanying LICENSE_MODEL file.
+# For licensing see docs/legal/LICENSE_MODEL.
 # Copyright (C) 2025 Apple Inc. All Rights Reserved.
 #
 
