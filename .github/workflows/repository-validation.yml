@@ -20,8 +20,8 @@ jobs:
 
       - name: Verify syntax for primary scripts
         run: |
-          python -m py_compile cross_temporal_pipeline.py
-          python -m py_compile analyze_detections.py
+          python -m py_compile scripts/compat/cross_temporal_pipeline.py
+          python -m py_compile scripts/compat/analyze_detections.py
           python -m py_compile scripts/cross_temporal_matching.py
 
       - name: Ensure README has no machine-specific paths
